@@ -1,10 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
 }
 
+/* olaide's work here */
 
+header {
+    padding: 1% 10%;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.logo {
+    font-size: 1rem;
+    font-weight: 900;
+}
+
+span {
+    color: #EB5757;
+    font-size: 2rem;
+}
+
+.logo,
+a {
+    color: #262626;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul {
+    display: flex;
+    gap: 15px;
+}
+
+header nav ul li {
+    display: inline-block;
+    border: 1px solid #D9D9D9;
+    border-radius: 8px;
+    padding: 10px 14px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.but2 ul li:last-child {
+    background: #EB5757;
+    border: none;
+}
+
+.but2 ul li:last-child a {
+    color: #FFFFFF;
+}
+
+header nav>div:last-of-type {
+    display: none;
+}
+
+/* END OF NAV BAR  */
+
+/* flora's work here  */
+
+/* betelhem work here  */
+
+/* ada's work here  */
 /* Styling for the Gallery Section here */
 .gallery-wrapper {
     display: flex;
@@ -120,3 +188,123 @@ h1 {
     }
 } */
 
+/* stella's work here  */
+
+/* zainab's work here  */
+
+/* Contact Form */
+.contact {
+    display: flex;
+    height: 35rem;
+    padding-right: 10%;
+}
+
+.contact aside {
+    width: 40rem;
+    height: 35rem;
+    background: url(/sitting.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.fhead {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fhead h1 {
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 60px;
+}
+
+.fhead p {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.fname {
+    display: flex;
+    column-gap: 0.5rem;
+}
+
+.fill {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.fill label {
+    font-size: 12px;
+}
+
+.fill input {
+    padding: 0.4rem;
+    background-color: #F5F5F5;
+    border: none;
+    outline: none;
+    border-radius: 0.3rem;
+}
+
+.fill input::placeholder {
+    color: #9b9898;
+}
+
+textarea {
+    background-color: #F5F5F5;
+    border: none;
+    border-radius: 0.3rem;
+    resize: none;
+    overflow: auto;
+    outline: none;
+    padding: 0.5rem;
+}
+
+/* gloria's work here  */
+
+/* media query  */
+
+@media (max-width: 640px) {
+    header nav ul {
+        display: none;
+    }
+
+    header nav>div:last-of-type {
+        display: revert;
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: column;
+        margin: 1rem 2rem;
+    }
+
+    .contact aside {
+        width: auto;
+        height: 15rem;
+    }
+
+    form {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .fname {
+        flex-wrap: wrap;
+    }
+}
