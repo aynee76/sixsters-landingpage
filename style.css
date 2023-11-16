@@ -73,6 +73,120 @@ header nav>div:last-of-type {
 /* betelhem work here  */
 
 /* ada's work here  */
+/* Styling for the Gallery Section here */
+.gallery-wrapper {
+    display: flex;
+    width: 1292px;
+    height: 487px;
+    padding: 30px 0px;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    background: #FFFFFF;
+}
+
+.content {
+    line-height: 40px;
+    align-self: stretch;
+    text-align: center;
+}
+
+h1 {
+    font-family: Noto Sans;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    color: #262626;
+}
+
+.gallery {
+    display: flex;
+    align-items: flex-start;
+    background-color: #F5F5F5;
+    gap: 20px;
+}
+
+.lone-picture {
+    flex: 1 0 0;
+    align-self: stretch;
+}
+
+.group-picture {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1 0 0;
+}
+/* Gallery styling ends */
+
+/* Responsiveness */
+/* Media Query for Mobile Devices */ 
+@media (max-width: 480px) {
+    .gallery-wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 812px;
+        height: 287px;
+        padding: 10px 0px;
+        gap: 6px;
+    }
+    .content {
+        line-height: 20px;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    
+    .gallery {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+    .lone-picture, .group-picture {
+            flex: 1 0 0;
+            align-self: stretch;
+            gap: 10px;
+    }
+    img {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+/* Media Query for Tablets, Ipads */ 
+/* @media (min-width: 481px) and (max-width: 767px) {
+    .gallery-wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 912px;
+        height: 387px;
+        padding: 20px 0px;
+        gap: 6px;
+    }
+    .content {
+        line-height: 25px;
+    }
+    h1 {
+        font-size: 35px;
+    }
+    
+    .gallery {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+    .lone-picture, .group-picture {
+        flex: 1 0 0;
+        align-self: stretch;
+        gap: 15px;
+    }
+    img {
+        width: 100px;
+        height: 100px;
+    }
+} */
 
 /* stella's work here  */
 
