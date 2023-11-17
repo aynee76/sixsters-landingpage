@@ -192,7 +192,219 @@ header nav>div:last-of-type {
 
 
 /* betelhem work here  */
+.wrapper{
+    margin: 48px 150px 100px ;
+}
+.title
+{
+font-size: 38px;
+font-weight: 600;
+line-height: 46px;
+padding-top: 40px ;
+text-align: left;
+}
 
+.line{
+    width: 4rem;
+    padding: 20px 0 20px ;
+}
+.paragraph-1{
+font-family: "Noto Sans";
+font-size: 16px;
+font-weight: 400;
+line-height: 28px;
+color: #595959;
+text-align: left;
+}
+.content-1{
+margin-top: 30px;
+display: flex;
+width: 568px;
+height: 780px;
+padding: 8px  ;
+flex-direction: column;
+position: relative;
+width: 568px;
+flex-direction: column;
+}
+.paragraph-2{
+    display: flex;
+    padding: 16px 0 20px;
+    color: #262626;
+    font-family:  "Noto Sans";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    
+}
+.card-1{
+    height: 250px;
+}
+.card2 {
+    display: flex;
+    margin-top: 5px;
+  }
+  .header {
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 16px;
+    position: relative;
+  }
+  
+ img{
+display: flex;
+width: 36%;
+height: 90%;
+position:absolute;
+top: 470px;
+left: 800px;
+}
+.item{
+    margin-top: 10px;
+    margin-left: 5px;
+    padding-top: 10px;
+    border-radius: 50%;
+    background-color: #ece9e9;
+    width: 7%;
+    margin-right: 10px;
+
+}
+ i{
+   padding-left: 13px ;
+   padding-bottom: 10px;
+}
+
+.link {
+  text-decoration: none;
+  color:#262626;
+}
+.btn{
+    display:flex;
+    width: 30%;
+}
+.txt {
+  text-decoration: underline;
+  text-align: left;
+}
+.icon-1{
+    width: 30px;
+    height: 23px;
+    left: 15%;
+    position: absolute;
+    top: 91%
+}
+.icon-2{
+    width: 30px;
+    height: 23px;
+    left: 15%;
+    position: absolute;
+    top: 59%
+}
+.icon-3{
+    width: 30px;
+    height: 23px;
+    left: 15%;
+    position: absolute;
+    top: 27%
+}
+/* Responsive styles for tablets */
+
+@media (max-width: 768px) {
+  .wrapper {
+    margin: 50px;
+  }
+
+  .title {
+    font-size: 28px;
+    line-height: 34px;
+  }
+
+  .line {
+    width: 3rem;
+  }
+
+  .paragraph-1 {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .content-1 {
+    width: 100%;
+    height: auto;
+  }
+
+  img {
+    position: static;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+  }
+
+  .icon-1,
+  .icon-2,
+  .icon-3 {
+    position: static;
+    top: 40%;
+    left: 30%;
+  }
+}
+.item{
+    margin-top: 10px;
+    margin-left: 5px;
+    padding-top: 10px;
+    border-radius: 50%;
+}
+
+.i{
+    padding: 5%;
+
+}
+/* Responsive styles for mobile */
+
+@media (max-width: 480px) {
+  .wrapper {
+    margin: 16px;
+  }
+
+  .title {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .line {
+    width: 3rem;
+  }
+
+  .paragraph-1 {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .content-1 {
+    width: 100%;
+    height: auto;
+    padding: 0;
+  }
+
+  .card-1 {
+    height: auto;
+  }
+
+  .card2 {
+    flex-direction: column;
+  }
+
+  img {
+   
+  }
+
+  .icon-1,
+  .icon-2,
+  .icon-3 {
+   left: auto;
+   top: 100%;
+  }
+}
 /* ada's work here  */
 /* Styling for the Gallery Section here */
 .gallery-wrapper {
