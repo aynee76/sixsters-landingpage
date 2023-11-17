@@ -345,7 +345,8 @@ left: 800px;
   }
 
   img {
-   
+   width: 100%;
+   flex-direction: column;
   }
 
   .icon-1,
