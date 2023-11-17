@@ -68,6 +68,8 @@ header nav>div:last-of-type {
 
 /* END OF NAV BAR  */
 
+
+
 /* flora's work here  */
 
 /* betelhem work here  */
@@ -76,9 +78,7 @@ header nav>div:last-of-type {
 /* Styling for the Gallery Section here */
 .gallery-wrapper {
     display: flex;
-    width: 1292px;
-    height: 487px;
-    padding: 30px 0px;
+    margin: 30px 10%;
     flex-direction: column;
     align-items: center;
     gap: 8px;
@@ -92,8 +92,7 @@ header nav>div:last-of-type {
 }
 
 h1 {
-    font-family: Noto Sans;
-    font-size: 30px;
+    font-size: 1.9rem;
     font-style: normal;
     font-weight: 600;
     color: #262626;
@@ -103,90 +102,17 @@ h1 {
     display: flex;
     align-items: flex-start;
     background-color: #F5F5F5;
-    gap: 20px;
+    gap: 1.3rem;
 }
 
-.lone-picture {
-    flex: 1 0 0;
-    align-self: stretch;
-}
 
 .group-picture {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    flex: 1 0 0;
+    gap: 1.3rem;
 }
+
 /* Gallery styling ends */
-
-/* Responsiveness */
-/* Media Query for Mobile Devices */ 
-@media (max-width: 480px) {
-    .gallery-wrapper {
-        display: flex;
-        flex-direction: column;
-        width: 812px;
-        height: 287px;
-        padding: 10px 0px;
-        gap: 6px;
-    }
-    .content {
-        line-height: 20px;
-    }
-    h1 {
-        font-size: 30px;
-    }
-    
-    .gallery {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 5px;
-    }
-    .lone-picture, .group-picture {
-            flex: 1 0 0;
-            align-self: stretch;
-            gap: 10px;
-    }
-    img {
-        width: 70px;
-        height: 70px;
-    }
-}
-
-/* Media Query for Tablets, Ipads */ 
-/* @media (min-width: 481px) and (max-width: 767px) {
-    .gallery-wrapper {
-        display: flex;
-        flex-direction: column;
-        width: 912px;
-        height: 387px;
-        padding: 20px 0px;
-        gap: 6px;
-    }
-    .content {
-        line-height: 25px;
-    }
-    h1 {
-        font-size: 35px;
-    }
-    
-    .gallery {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 8px;
-    }
-    .lone-picture, .group-picture {
-        flex: 1 0 0;
-        align-self: stretch;
-        gap: 15px;
-    }
-    img {
-        width: 100px;
-        height: 100px;
-    }
-} */
 
 /* stella's work here  */
 
@@ -196,16 +122,21 @@ h1 {
 .contact {
     display: flex;
     height: 35rem;
-    padding-right: 10%;
+    margin: 2rem 10% 2rem 0;
 }
 
 .contact aside {
-    width: 40rem;
-    height: 35rem;
-    background: url(/sitting.jpeg);
+    width: 50%;
+    /* height: 35rem; */
+    /* background: url(/sitting.jpeg);
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
+}
+
+.contact aside img {
+    width: 100%;
+    height: 100%;
 }
 
 .contact form {
@@ -214,6 +145,7 @@ h1 {
     align-items: center;
     justify-content: center;
     width: 50%;
+    row-gap: 1.5rem;
 }
 
 .fhead {
@@ -223,7 +155,7 @@ h1 {
 }
 
 .fhead h1 {
-    font-size: 50px;
+    font-size: 3rem;
     font-style: normal;
     font-weight: 600;
     line-height: 60px;
@@ -274,11 +206,39 @@ textarea {
     padding: 0.5rem;
 }
 
+.submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1rem;
+    width: 24rem;
+    color: white;
+    font-size: 20px;
+    background-color: black;
+    border: none;
+    border-radius: 0.3rem;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.smlinks {
+    display: flex;
+    column-gap: 2rem;
+}
+
+.smlinks img {
+    cursor: pointer;
+}
+
 /* gloria's work here  */
 
-/* media query  */
+/* media query  for mobile phones and a bit wider screens */
 
 @media (max-width: 640px) {
+    :root {
+        font-size: 10px;
+    }
+
     header nav ul {
         display: none;
     }
@@ -287,24 +247,179 @@ textarea {
         display: revert;
     }
 
+    /* ada's media query  */
+
+    .gallery-wrapper {
+        display: flex;
+        flex-direction: column;
+        padding: 10px 0px;
+        gap: 6px;
+    }
+
+    .gallery {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .lone-picture,
+    .group-picture {
+        flex: 1 0 0;
+        gap: 10px;
+    }
+
+    .group-picture img,
+    .lone-picture img {
+        width: 12rem;
+        /* height: 70px; */
+    }
+
+    /* gallery ends here  */
+
+    /* zainab media query */
     .contact {
         display: flex;
         flex-direction: column;
         margin: 1rem 2rem;
+        align-items: center;
+        height: fit-content;
+        row-gap: 1rem;
     }
 
     .contact aside {
-        width: auto;
-        height: 15rem;
+        width: 18rem;
+        height: 10rem;
+    }
+
+    .fhead {
+        height: auto;
+    }
+
+    .fhead h1 {
+        font-size: 2.5rem;
     }
 
     form {
         display: flex;
         justify-content: center;
-        width: 100%;
+        /* width: fit-content; */
     }
 
+
     .fname {
-        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    textarea {
+        width: 19rem;
+    }
+
+    .submit {
+        width: 19rem;
+    }
+
+    .submit img,
+    .smlinks img {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+}
+
+
+/* media query for tablets and the mini pc */
+
+@media (max-width: 1024px) and (min-width: 641px) {
+    :root {
+        font-size: 10px;
+    }
+
+    header nav ul {
+        display: flex;
+        gap: 8px;
+    }
+
+    header nav ul li {
+        display: inline-block;
+        border: 1px solid #D9D9D9;
+        border-radius: 4px;
+        padding: 8px;
+    }
+
+    header nav ul li a {
+        font-size: 8px;
+        font-weight: 600;
+    }
+
+    /* ada's media query  */
+
+    .gallery-wrapper {
+        display: flex;
+        flex-direction: column;
+        padding: 10px 0px;
+        gap: 6px;
+    }
+
+    .gallery {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .lone-picture,
+    .group-picture {
+        flex: 1 0 0;
+        gap: 10px;
+    }
+
+    .group-picture img,
+    .lone-picture img {
+        width: 27rem;
+    }
+
+    /* gallery ends here  */
+
+    /* zainab media query */
+    .contact {
+        display: flex;
+        margin: 1rem 2rem;
+        align-items: center;
+        height: fit-content;
+        row-gap: 1rem;
+    }
+
+    .contact aside {
+        width: calc(100/2);
+        height: 100;
+        background-size: cover;
+    }
+
+    .fhead h1 {
+        font-size: 2.5rem;
+    }
+
+    form {
+        display: flex;
+        justify-content: center;
+        /* width: fit-content; */
+    }
+
+
+    .fname {
+        flex-direction: column;
+    }
+
+    textarea {
+        width: 19rem;
+    }
+
+    .submit {
+        width: 19rem;
+    }
+
+    .submit img,
+    .smlinks img {
+        width: 1.5rem;
+        height: 1.5rem;
     }
 }
