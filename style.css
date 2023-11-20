@@ -257,15 +257,14 @@ header nav>div:last-of-type {
     position: relative;
 }
 
-/* img {
-    display: flex;
-    width: 36%;
-    height: 90%;
-    position: absolute;
-    top: 470px;
-    left: 800px;
+/* img{
+display: flex;
+width: 36%;
+height: 90%;
+position:absolute;
+top: 470px;
+left: 800px;
 } */
-
 .item {
     margin-top: 10px;
     margin-left: 5px;
