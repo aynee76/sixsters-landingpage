@@ -466,6 +466,91 @@ h1 {
 
 /* stella's work here  */
 
+.container {
+
+    overflow-x: hidden;
+}
+
+
+
+
+
+
+@media (max-width: 1404px) {
+    section .text {
+        margin-left: 1rem;
+    }
+
+    p {
+        margin-left: -12rem;
+    }
+
+    .text-container {
+        margin-left: -14rem;
+    }
+}
+
+@media (max-width: 394px) {
+    section .text {
+        margin-left: -1rem;
+    }
+
+    .divider {
+        margin-left: -7rem;
+    }
+
+
+    .text-container {
+        margin-left: -17rem;
+    }
+
+    .icon img {
+        display: flex;
+        justify-content: center;
+        visibility: hidden;
+    }
+
+
+}
+
+.ptag{
+    margin-left: 20rem
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    margin-left: 70rem;
+}
+
+section .text h1 {
+    color: #262626;
+    font-family: Noto Sans;
+    font-size: 3.2rem;
+    font-style: normal;
+    font-weight: 600;
+    margin-left: 19rem;
+    margin-bottom: 50px;
+}
+
+section article {
+    display: block;
+    width: 100%;
+
+    margin-left: 18rem;
+}
+
+.divider {
+    margin-left: 20rem;
+}
+
+section .imge-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
 /* zainab's work here  */
 
 /* Contact Form */
